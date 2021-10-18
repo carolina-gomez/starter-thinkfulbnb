@@ -64,13 +64,6 @@ header {
   color: #fff;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  padding-bottom: 20px;
-}
-
 header nav ul li {
   list-style-type: none;
 }
@@ -92,14 +85,8 @@ form {
   padding: 10px;
 }
 
-/* main section form div {
-justify-content: space-between;
-border: 2px solid #5d38ff;
-} */
-
 form label {
   font-weight: bold;
-  text-align: right;
 }
 
 form select,
@@ -130,7 +117,3 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-
-@media all and (min-width: 480px) {
-  
-}
