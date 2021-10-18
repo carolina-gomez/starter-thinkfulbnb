@@ -22,10 +22,10 @@
       <div class="logo">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
-          <li><a>Stay</a></li>
-          <li><a>About</a></li>
-          <li><a>Ideas</a></li>
-          <li><a>Host</a></li>
+          <li><a href=#stay>Stay</a></li>
+          <li><a href=#about>About</a></li>
+          <li><a href=#ideas>Ideas</a></li>
+          <li><a href=#host>Host</a></li>
         </ul>
       </nav>
     </header>
@@ -35,29 +35,77 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form>
+          <div class="item">
+            <!-- Location -->
+            <label for="location">Location</label>
+            <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+            />
+          </div>
+          <div class="item">
+            <!-- Arrive Date -->
+            <label for="arrive">Arrive</label>
+            <input
+            id="arrive"
+            type="date"
+            name="arrive"
+            placeholder="mm/dd/yyyy"
+            />
+          </div>
+          <div class="item">
+            <!-- Depart Date -->
+            <label for="depart">Depart</label>
+            <input
+            id="depart"
+            type="date"
+            name="depart"
+            placeholder="mm/dd/yyyy"
+            />
+          </div>
+          <div class="item">
+            <!-- Type dropdown list-->
+            <label for="type">Type</label>
+            <select name="type" id="type" size="1">
+              <option value="apartment">Apartment</option>
+              <option value="barn">Barn</option>
+              <option value="castle">Castle</option>
+              <option value="houseboat">Houseboat</option>
+              <option value="tinyhouse">Tiny House</option>
+              <option value="yacht">Yacht</option>
+              <option value="yurt">Yurt</option>
+            </select>
+          </div class="item">
+          <!-- Search button -->
+          <button type="search">Search</button>
+        </form>
       </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
         <h2>About</h2>
+        <div class="row group">
+          <img class="item"
+            src="images/vacation-rental-pool.png"
+            alt="Thinkfulbnb - Vacation rental pool"
+          />
 
-        <img
-          src="images/vacation-rental-pool.png"
-          alt="Thinkfulbnb - Vacation rental pool"
-        />
+          <img class="item"
+            src="images/vacation-rental-inside-stone.png"
+            alt="Thinkfulbnb - Vacation rental inside stone"
+          />
 
-        <img
-          src="images/vacation-rental-inside-stone.png"
-          alt="Thinkfulbnb - Vacation rental inside stone"
-        />
-
-        <p>
-          Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
-          fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
-          porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
-          neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
-          gravida neque.
-        </p>
+          <p class="item item-double">
+            Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
+            fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
+            porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
+            neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
+            gravida neque.
+          </p>
+        </div>
       </section>
 
       <!-- Ideas -->
