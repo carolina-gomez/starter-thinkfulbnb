@@ -59,7 +59,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 55px;
   color: #fff;
 }
 
@@ -70,6 +70,7 @@ header nav {
 
 header nav ul {
   display: flex;
+  padding: 0;
 }
 
 header nav ul li {
@@ -80,6 +81,10 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  padding: 0;
 }
 
 header nav ul li a:hover {
@@ -141,6 +146,9 @@ header {
   padding: 10px 10px 10px 10px;
 }
 
+.logo {
+  font-size: 50px;
+}
 form {
   display: flex;
   flex-direction: row;
@@ -193,6 +201,82 @@ flex-direction: row;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+}
+
+@media (max-width: 300px) {
+
+  .logo {
+    font-size: 40px;
+  }
+html {
+    font-size: 12px;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+}
+
+@media (max-width: 240px) {
+
+  .logo {
+    font-size: 30px;
+  }
+html {
+    font-size: 10px;
+}
+
+html h2{
+  font-size: 20px;
+}
+
+html h3{
+  font-size: 15px;
+}
+
+form button {
+  width: 100px;
+  font-size: 10px;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+}
+
+@media (max-width: 200px) {
+
+  .logo {
+    font-size: 20px;
+  }
+html {
+    font-size: 6px;
+}
+
+html h2{
+  font-size: 15px;
+}
+
+html h3{
+  font-size: 13px;
+}
+
+form button {
+  width: 60px;
+  font-size: 6px;
+}
+
+form select,
+form input {
+  margin-bottom: 10px;
+  width: 50px;
 }
 
 }
